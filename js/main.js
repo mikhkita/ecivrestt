@@ -40,8 +40,82 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
-    
-	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
+
+    var myPlace = {lat: 55.754407, lng: 37.625151};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: myPlace,
+      styles:[
+        {
+            "featureType": "all",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "gamma": 1
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "saturation": "-99"
+                },
+                {
+                    "lightness": "38"
+                },
+                {
+                    "gamma": "3.11"
+                },
+                {
+                    "color": "#aaaaaa"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [
+                { "color": "#fece0b" },
+                { "visibility": "simplified" }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#000000"
+                }
+            ]
+        }
+    ]
+    });
+    var marker = new google.maps.Marker({
+      position: myPlace,
+        map: map,
+        icon: {
+            url: "/html/i/pin.svg",
+            scaledSize: new google.maps.Size(40, 58), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(23,50), // anchor
+        },
+        title: ""
+    });
+
+    $(document).ready(function() {
+        $("b-mouse").click(function () { 
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            $('html,body').animate( { scrollTop: destination }, 1100 );
+            return false;
+        });
+    });
+
  //    var myOptions = {
  //        zoom: 16,
  //        center: myPlace,
