@@ -61,6 +61,20 @@
     unicode-range: U+0020-0451;
 }
 
+@font-face {
+    font-family:'Merel-Bold';
+    src: url('../fonts/Merel-Bold.eot');
+	src: url('../fonts/Merel-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Merel-Bold.woff2') format('woff2'),
+		url('../fonts/Merel-Bold.woff') format('woff'),
+		url('../fonts/Merel-Bold.ttf') format('truetype'),
+		url('../fonts/Merel-Bold.svg#Merel-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0451;
+}
+
 html,
 body {
 	position: relative;
@@ -95,7 +109,6 @@ h2.title{
     padding-bottom: 22px;
 }
 .header-title div{
-    height: 560px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -105,7 +118,7 @@ h2.title{
 	font-size: 26px;
 }	
 .header-contacts a{
-
+	text-align: right;
     font-size: 18px;
 	text-decoration: none;
 	color: #ffffff;
@@ -115,8 +128,24 @@ h2.title{
 }
 
 
-.app-button a{
+.header-contacts a:last-child{
 	font-size: 16px;
+}
+.app-button:hover{
+	background-color: rgba(254, 206, 11, 0.5);
+}
+.about-button:hover{
+	background-color: #f5c70b;
+}
+.about-button:active{
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
+}
+.underline:hover{
+	text-decoration: none;
 }
 li{
 	list-style: none;
@@ -145,7 +174,7 @@ input.error,textarea.error{
     display: inline-block;
     float: left;
     width: 250px;
-    height: 56px;
+    height: 57px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: url('../i/logo.png');
@@ -162,6 +191,7 @@ input.error,textarea.error{
     background-size: cover;
 }
 .b-block-menu{
+    position: absolute;
 	padding-top: 25px;
 	width: 100%;
 }
@@ -190,6 +220,10 @@ ul.top-menu{
 }
 .header-title{
 	display: table;
+}
+div.b-block.header-title{
+    height: 72%;
+    top: 100px;
 }
 .header-title .b-block{
 	display: table-cell;
@@ -351,29 +385,28 @@ ul.top-menu{
 	-webkit-animation: mouse-second-move 1s ease-in-out infinite;
  	-o-animation: mouse-second-move 1s ease-in-out infinite;
 }
-.about{
-	background-image: url('../i/background-gray.png');
-    background-position: bottom 0px right -125px;
-	background-repeat: repeat-y; 
-}
 
 .about .title{
+	font-family: "Merel-Bold";
 	color: #554e4e;
 	font-size: 48px;
-	line-height:32px;
+	line-height:60px;
+}
+.about .b-text{
+    padding-bottom: 45px;
 }
 .about p{
 	color: #554e4e;
 	font-size: 20px;
 	font-family:"Merel-Regular";
     padding-top: 35px;
-    line-height: 31px;
+    line-height: 32px;
 }
 .about h3{
+	line-height: 38px;
 	color: #554e4e;
 	font-size: 28px;
 	font-family:"Merel-Medium";
-    margin-top: 19px;
 }
 .about-left{
 	display: inline-block;
@@ -382,10 +415,11 @@ ul.top-menu{
 	text-align: left;
 }
 .about-right{
+	background: url(../i/background-gray.png);
+	background-size: 500px;
 	display: inline-block;
-	width: 45%;
-	float: left;
-    padding-left: 44px;
+	width: 41%;
+    margin-left: 44px;
     padding-top: 25px;
 }
 .about-button{
@@ -397,6 +431,12 @@ ul.top-menu{
 	padding: 21px 47px 20px 48px;
 	border-radius: 3px;
 	box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+
+    -webkit-transition: transform 100ms ease-out;
+    -moz-transition: transform 100ms ease-out;
+    -ms-transition: transform 100ms ease-out;
+    -o-transition: transform 100ms ease-out;
+    transition: transform 100ms ease-out;
 }
 .b-icons{
 	display: block;
@@ -432,13 +472,6 @@ ul.top-menu{
 	vertical-align: middle;
     display: table-cell;
 }
-.gray-block{
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    background-image: url('../i/background-gray.png');
-    
-}
 .services{
 	position: relative;
 	top: 0;
@@ -450,34 +483,35 @@ ul.top-menu{
 }
 .services .b-text{
     padding-bottom: 91px;
-    padding-top: 52px;
 }
 .services h2.title{
+	font-family: "Merel-Bold";
     font-size: 48px;
+    line-height: 60px;
 }
 .b-services{
     display: table;
 	padding-top: 53px;
 }
 .b-service-item{
+	background-color: rgba(244,244,244, 0.32);
     vertical-align: top;
-    display: table-cell;
+    display: inline-block;
 	border-radius: 3px;
+	width: calc((100% - 48px)/3);
 }
-.b-service-item:not(:first-child){
-	padding-left: 24px;
+.b-service-item:not(:last-child){
+	margin-right: 24px;
 }
 .b-service-item-top{
 	display: block;
-	background-color: rgba(244,244,244, 0.32);
 	border-radius: 3px 3px 0 0;
 }
 .b-service-item-top img{
 	padding-top: 38px;
 }
 .b-service-item-top p{
-	font-family: "Merel-Regular";
-	font-weight: 700;
+	font-family: "Merel-Bold";
 	font-size: 22px;
 	color: #ffffff;
 	text-align: center;
@@ -486,11 +520,12 @@ ul.top-menu{
 	padding-bottom: 28px;
 }
 .b-service-item-bottom{
-	background-color: rgba(0,0,0, 0.36);
+	background-color: rgba(0,0,0, 0.64);
 	border-radius: 0 0 3px 3px;
 	
 }
 .b-service-item-bottom p{
+	letter-spacing: 0.1px;
 	font-weight: 400;
 	font-family: "Merel-Regular";
 	font-size: 18px;
@@ -526,16 +561,20 @@ ul.top-menu{
 	font-size: 36px;
 	color: #554e4e; 
 }
+.footer .b-text{
+    padding-top: 68px;
+}
 .footer-left-column{
 	width: 49%;
 	display: inline-block;
 	float: left;
 }
 .input-top{
-	display: table;
+
 }
 .input-top .input-string{
-	display: table-cell;
+	display: inline-block;
+    width: calc((100% - 28px)/2);
 }
 .form input{
     width: 100%;
@@ -548,9 +587,11 @@ ul.top-menu{
 }
 
 .input-top .input-string:not(:first-child){
-	padding-left: 24px;
+	margin-left: 24px;
 }
 .input-string input{
+	font-family: 'Merel-Regular';
+    margin-top: 4px;
     padding: 11px 0 15px 24px;
     display: block;
 }
@@ -564,7 +605,7 @@ ul.top-menu{
     padding: 11px 0 58px 24px;
 }
 .input-bottom .input-string{
-	padding-top: 16px;
+	margin-top: 16px;
 }
 .input-string span{
 	font-family: "Merel-Medium";
@@ -577,6 +618,7 @@ ul.top-menu{
 	border-radius: 3px;
 }
 .footer .about-button{
+	position: relative;
     box-shadow: none;
     float: right;
 	margin-top: 0px;
@@ -584,17 +626,16 @@ ul.top-menu{
 }
 .footer .footer-left-column a.about-button:after{
     text-decoration: none;
-    position: relative;
-    right: -60px;
-    content: "→";
-    top: -1px;
+    position: absolute;
+    content: url(../i/arrow-right.svg);
+    right: 22px;
+    top: 19px;
 }
 .footer .footer-right-column a.about-button:after{
     text-decoration: none;
-    position: relative;
-    right: -30px;
-    content: "↓";
-    top: -1px;
+    position: absolute;
+    content: url(../i/arrow-down.png);
+    right: 20px;
 }
 
 .personal-info{
@@ -657,6 +698,29 @@ input[name="MAIL"]{
     height: 21px;
     font-size: 0px;
 }
+.b-thanks.b-popup h3{
+    font-size: 36px;
+    font-family: 'Merel-Bold';
+    color: #554e4e;
+}
+.b-thanks.b-popup h4{
+	font-size: 20px;
+    color: #554e4e;
+    font-family: 'Merel-Regular';
+}
+.b-orange-butt{
+    font-family: 'Merel-Medium';
+	background-color: #fece0b;
+    margin-top: 20px;
+	color: #554e4e;
+	font-size: 18px;
+    padding: 15px 64px 15px 64px;
+	border:0px;
+	border-radius: 3px;
+}
+.b-orange-butt:hover{
+	background-color: #f5c70b;
+} 
 
 
 .fancybox-inner{
@@ -719,7 +783,12 @@ input:-moz-placeholder {
 
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
-	
+	.footer-info a{
+		background-image: url(../i/redder@2x.png);
+	}
+	.b-logo{
+		background-image: url(../i/logo@2x.png);
+	}
 }	
 @media screen and (max-width: 1250px){
 	
