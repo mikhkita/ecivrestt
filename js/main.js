@@ -11,6 +11,11 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+
+        var height = (myHeight <= 550)?550:myHeight;
+        $(".header").css({
+            "height" : height
+        });
     }
     $(window).resize(resize);
     resize();
