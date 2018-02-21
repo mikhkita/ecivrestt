@@ -40,11 +40,22 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
-
+    var myOptions = {
+        zoom: 16,
+        center: myPlace,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        zoomControl: true
+    }
     var myPlace = {lat: 55.754407, lng: 37.625151};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 16,
       center: myPlace,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI: true,
+      scrollwheel: false,
+      zoomControl: true,
       styles:[
         {
             "featureType": "all",
@@ -99,7 +110,7 @@ $(document).ready(function(){
       position: myPlace,
         map: map,
         icon: {
-            url: "/html/i/pin.svg",
+            url: "i/pin.svg",
             scaledSize: new google.maps.Size(40, 58), // scaled size
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(23,50), // anchor
