@@ -137,6 +137,13 @@ h2.title{
 .about-button:hover{
 	background-color: #f5c70b;
 }
+.about-button:active{
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
+}
 .underline:hover{
 	text-decoration: none;
 }
@@ -424,6 +431,12 @@ div.b-block.header-title{
 	padding: 21px 47px 20px 48px;
 	border-radius: 3px;
 	box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+
+    -webkit-transition: transform 100ms ease-out;
+    -moz-transition: transform 100ms ease-out;
+    -ms-transition: transform 100ms ease-out;
+    -o-transition: transform 100ms ease-out;
+    transition: transform 100ms ease-out;
 }
 .b-icons{
 	display: block;
