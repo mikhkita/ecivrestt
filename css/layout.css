@@ -88,7 +88,7 @@ body {
 	color: #472275;
 }
 p{
-	font-family: "Merel-Medium";
+	font-family: "Merel-Regular";
 	color: #ffffff;
 }
 a{
@@ -113,7 +113,6 @@ h2.title{
     vertical-align: middle;
 }
 .header-title p{
-	font-family: "Merel-Regular";
 	line-height: 36px;
 	font-size: 26px;
 }	
@@ -398,7 +397,6 @@ div.b-block.header-title{
 .about p{
 	color: #554e4e;
 	font-size: 20px;
-	font-family:"Merel-Regular";
     padding-top: 35px;
     line-height: 32px;
 }
@@ -409,18 +407,21 @@ div.b-block.header-title{
 	font-family:"Merel-Medium";
 }
 .about-left{
+	padding-top: 60px;
+    padding-bottom: 87px;
 	display: inline-block;
     width: 55%;
 	float: left;
 	text-align: left;
 }
 .about-right{
+	padding-top: 85px;
+    padding-bottom: 59px;
 	background: url(../i/background-gray.png);
 	background-size: 500px;
 	display: inline-block;
 	width: 41%;
     margin-left: 44px;
-    padding-top: 25px;
 }
 .about-button{
 	display: inline-block;
@@ -445,13 +446,8 @@ div.b-block.header-title{
 }
 .b-about-icon img{
 	padding-right: 32px;
-	display: inline-block;
-	float: left;
 }
 .b-about-icon p{
-	padding-right: 32px;
-	display: inline-block;
-	float: left;
     padding-top: 14px;
 	font-size: 24px;
 	line-height: 32px;
@@ -462,6 +458,7 @@ div.b-block.header-title{
 }
 .b-about-icon h2.title{
 	line-height: 38px;
+    margin-top: -8px;
 }
 .b-about-icon {
 	display: table;
@@ -527,7 +524,6 @@ div.b-block.header-title{
 .b-service-item-bottom p{
 	letter-spacing: 0.1px;
 	font-weight: 400;
-	font-family: "Merel-Regular";
 	font-size: 18px;
 	color: #ffffff;
 	text-align: left;
@@ -542,7 +538,6 @@ div.b-block.header-title{
 }
 .cooperation p{
 	color: #554e4e;
-	font-family: "Merel-Regular";
 	font-size: 20px;
 	line-height: 32px;
     padding-bottom: 32px;
@@ -570,11 +565,11 @@ div.b-block.header-title{
 	float: left;
 }
 .input-top{
-
+	font-size: 0;
 }
 .input-top .input-string{
 	display: inline-block;
-    width: calc((100% - 28px)/2);
+    width: calc((100% - 24px)/2);
 }
 .form input{
     width: 100%;
