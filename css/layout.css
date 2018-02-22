@@ -80,7 +80,7 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1000px;
+	min-width: 1200px;
 	text-align: center;
 	font-family: 'PTSans-Bold';
 	overflow-x: hidden;
@@ -101,11 +101,13 @@ a{
     padding-top: 60px;
 }
 h2.title{
-	font-family: "Merel-Medium";
+	font-family: "Merel-Bold";
 	font-size: 56px;
 	color: #ffffff;
 }
 .header-title h2{
+	font-family: "Merel-Medium";
+	line-height: 56px;
     padding-bottom: 22px;
 }
 .header-title div{
@@ -212,6 +214,7 @@ ul.top-menu{
 	float: right;
 }
 .app-button{
+	display: block;
 	padding: 7px 17px 7px 17px;
     border: 1px solid #fece0b;
     border-radius: 3px;
@@ -401,6 +404,7 @@ div.b-block.header-title{
     line-height: 32px;
 }
 .about h3{
+    padding-top: 4px;
 	line-height: 38px;
 	color: #554e4e;
 	font-size: 28px;
@@ -416,7 +420,7 @@ div.b-block.header-title{
 }
 .about-right{
 	padding-top: 85px;
-    padding-bottom: 59px;
+    padding-bottom: 63px;
 	background: url(../i/background-gray.png);
 	background-size: 500px;
 	display: inline-block;
@@ -458,7 +462,7 @@ div.b-block.header-title{
 }
 .b-about-icon h2.title{
 	line-height: 38px;
-    margin-top: -8px;
+    margin-top: -7px;
 }
 .b-about-icon {
 	display: table;
@@ -508,7 +512,7 @@ div.b-block.header-title{
 	padding-top: 38px;
 }
 .b-service-item-top p{
-	font-family: "Merel-Bold";
+	font-family: "Merel-Medium";
 	font-size: 22px;
 	color: #ffffff;
 	text-align: center;
@@ -522,13 +526,12 @@ div.b-block.header-title{
 	
 }
 .b-service-item-bottom p{
-	letter-spacing: 0.1px;
 	font-weight: 400;
 	font-size: 18px;
 	color: #ffffff;
 	text-align: left;
 	line-height: 28px;
-    padding: 20px 20px 24px 20px;
+    padding: 20px 24px 20px 20px;
 }
 .cooperation h2.title{
 	color: #554e4e;
@@ -571,7 +574,7 @@ div.b-block.header-title{
 	display: inline-block;
     width: calc((100% - 24px)/2);
 }
-.form input{
+.form input,textarea{
     width: 100%;
 	font-size: 20px;
 	color: #554e4e;;
@@ -590,11 +593,26 @@ div.b-block.header-title{
     padding: 11px 0 15px 24px;
     display: block;
 }
+.input-string textarea{
+	font-family: 'Merel-Regular';
+	font-size: 20px;
+    margin-top: 4px;
+    padding: 11px 0 15px 24px;
+    display: block;
+    width: 100%;
+    height: 93px;
+    resize: none;
+}
 
 .input-string input::-webkit-input-placeholder {color:#a9a9a9; opacity:0.4;}
 .input-string input::-moz-placeholder          {color:#a9a9a9; opacity:0.4;}
 .input-string input:-moz-placeholder           {color:#a9a9a9; opacity:0.4;}
 .input-string input:-ms-input-placeholder      {color:#a9a9a9; opacity:0.4;}
+
+.input-string textarea::-webkit-input-placeholder {color:#a9a9a9; opacity:0.4;}
+.input-string textarea::-moz-placeholder          {color:#a9a9a9; opacity:0.4;}
+.input-string textarea:-moz-placeholder           {color:#a9a9a9; opacity:0.4;}
+.input-string textarea:-ms-input-placeholder      {color:#a9a9a9; opacity:0.4;}
 
 .input-bottom .input-string:last-child input{
     padding: 11px 0 58px 24px;
@@ -613,6 +631,7 @@ div.b-block.header-title{
 	border-radius: 3px;
 }
 .footer .about-button{
+	font-size: 16px;
 	position: relative;
     box-shadow: none;
     float: right;
@@ -664,7 +683,7 @@ input[name="MAIL"]{
 	padding: 18px 64px 16px 24px;
 }
 .footer-line{
-	border:1px solid #979797;
+	border:0.5px solid #979797;
 	opacity: 0.3;
 }
 .footer-info{
@@ -694,6 +713,7 @@ input[name="MAIL"]{
     font-size: 0px;
 }
 .b-thanks.b-popup h3{
+	padding-bottom: 16px;
     font-size: 36px;
     font-family: 'Merel-Bold';
     color: #554e4e;
@@ -706,10 +726,10 @@ input[name="MAIL"]{
 .b-orange-butt{
     font-family: 'Merel-Medium';
 	background-color: #fece0b;
-    margin-top: 20px;
+    margin-top: 36px;
 	color: #554e4e;
 	font-size: 18px;
-    padding: 15px 64px 15px 64px;
+    padding: 14px 64px 18px 64px;
 	border:0px;
 	border-radius: 3px;
 }
@@ -728,11 +748,90 @@ input[name="MAIL"]{
 	color: #FFF;
 }
 .yellow{
+    font-family: Merel-Regular;
 	color: #fece0b;
 }
 /*.b{
 	position: relative;
 }*/
+/*-----------Popup-----------*/
+
+.b-popup{
+	width: calc(100% - 48px);
+	max-width: 500px;
+    padding: 32px 44px 44px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+	.b-popup h2.b-title{
+		font-size: 36px;
+		line-height: 44px;
+		color: #554e4e;
+		margin-bottom: 16px;
+	}
+
+	.b-popup h4{
+		font-size: 16px;
+		line-height: 26px;
+		color: #554e4e;
+	}
+
+	.b-popup form{
+		margin: 16px 0;
+	}
+
+		.b-popup form .wrap-input{
+			float: left;
+			width: calc(100%/2 - 12px);
+			margin-right: 24px;
+		}
+
+		.b-popup form .wrap-input:nth-child(2n){
+			margin-right: 0;
+		}
+
+			.b-popup form .wrap-input h4{
+				margin-bottom: 4px;
+			}
+
+			.b-popup form .wrap-input input{
+				width: 100%;
+				padding: 15px 24px;
+				border: 1px solid #E5E5E5;
+				border-radius: 3px;
+				background-color: transparent;
+				color: #554e4e;
+				font-family: 'Merel-Regular';
+				font-size: 16px;
+			}
+
+
+	.b-popup .about-button{
+		position: relative;
+		float: right;
+		width: calc(50% - 12px);
+		min-width: 180px;
+		padding: 16px 24px 14px;
+		margin-top: 32px;
+	}
+	.b-popup .about-button:after{
+	    text-decoration: none;
+	    position: absolute;
+	    content: url(../i/arrow-right.svg);
+	    right: 22px;
+	    top: 17px;
+	}
+
+
+.fancybox-close-small:active:after, .fancybox-close-small:focus:after {
+	outline: none;
+}
 .b-block{
 	position: relative;
 	width: 1152px;
@@ -765,6 +864,10 @@ input:-moz-placeholder {
 }
 .b-btn{
 
+}
+strong, b{
+    font-weight: normal;
+    font-family: Merel-Bold;
 }
 .b-orange-btn{
 
