@@ -106,7 +106,6 @@ h2.title{
 	color: #ffffff;
 }
 .header-title h2{
-	font-family: "Merel-Medium";
 	line-height: 56px;
     padding-bottom: 22px;
 }
@@ -774,6 +773,7 @@ input[name="MAIL"]{
 }
 
 	.b-popup h2.b-title{
+		font-family: 'Merel-Bold';
 		font-size: 36px;
 		line-height: 44px;
 		color: #554e4e;
@@ -781,6 +781,7 @@ input[name="MAIL"]{
 	}
 
 	.b-popup h4{
+		font-family: 'Merel-Regular';
 		font-size: 16px;
 		line-height: 26px;
 		color: #554e4e;
@@ -806,13 +807,18 @@ input[name="MAIL"]{
 
 			.b-popup form .wrap-input input{
 				width: 100%;
-				padding: 15px 24px;
+				padding: 12px 24px 16px;
 				border: 1px solid #E5E5E5;
 				border-radius: 3px;
 				background-color: transparent;
 				color: #554e4e;
 				font-family: 'Merel-Regular';
 				font-size: 16px;
+			}
+			.personal-info a{
+				color: #554e4e;
+			    font-size: 14px;
+  				font-family: Merel-regular;
 			}
 
 
