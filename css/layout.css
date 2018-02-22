@@ -687,6 +687,8 @@ input[name="MAIL"]{
 	opacity: 0.3;
 }
 .footer-info{
+	position: relative;
+	padding-right: 130px;
 	float: left;
 	color: #554e4e;
 	line-height: 32px;
@@ -701,9 +703,10 @@ input[name="MAIL"]{
 	text-align: right;
 }
 .footer-info a{
-	display: inline-block;
-	margin-left: 11px;
-	opacity: 1;
+    display: inline-block;
+    position: absolute;
+    margin-left: 11px;
+    opacity: 1;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -711,6 +714,7 @@ input[name="MAIL"]{
     width: 120px;
     height: 21px;
     font-size: 0px;
+    margin-top: 7px;
 }
 .b-thanks.b-popup h3{
 	padding-bottom: 16px;
