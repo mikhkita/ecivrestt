@@ -1,0 +1,67 @@
+@media screen and (max-width: 768px){
+	body{
+		min-width: 320px;
+	}
+	.b-block{
+		width: calc(100% - 48px);
+	}
+	.b-block-menu{
+		display: none;
+	}
+	div.b-block.header-title{
+		height: 100%;
+		top: 0;
+	}
+	.b-service-item{
+		width: 100%;
+	}
+	.b-service-item:not(:first-child){
+	    margin-left: 0; 
+	}
+	.footer-left-column{
+	    width: 100%;
+	}
+	.footer-right-column{
+		width: 100%;
+	}
+	.b-popup form .wrap-input{
+		float: none; 
+    	width: 100%;
+	}
+	.under-form{
+	    margin-top: 14px;
+	}
+	.footer .b-text{
+	    padding-bottom: 60px;
+	}
+	.about-right{
+	    width: calc(100% + 48px);
+	    left: 0;
+        padding-bottom: 0; 
+	}
+	.cooperation h2.title{
+	    font-size: 44px;
+	}
+	.footer-right-column .about-button{
+	    margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 657px){
+	.footer-info-right{
+		float: left;
+	    padding-top: 0px;
+	}
+	.footer-info.left{
+		padding-bottom: 7px;
+	}
+}
+@media screen and (max-width: 565px){
+	.footer .personal-info{
+	    width: 100%;
+	}
+	.footer a.about-button.ajax{
+		float: left;
+    	margin-top: 14px;
+    	margin-bottom: 20px;
+	}
+}

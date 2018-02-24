@@ -165,15 +165,22 @@ input.error,textarea.error{
 }
 .b-menu{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
+	width: calc(100% - 430px);
+	margin-bottom: -14px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 .b-menu li a {
     font-size: 16px;
 }
 .b-logo{
     display: inline-block;
-    float: left;
+    /* float: left; */
     width: 250px;
+    vertical-align: middle;
     height: 57px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -192,19 +199,23 @@ input.error,textarea.error{
 }
 .b-block-menu{
     position: absolute;
-	padding-top: 25px;
-	width: 100%;
+    padding-top: 25px;
+    width: 100%;
+    z-index: 1000;
 }
 ul.top-menu{
 	display: inline-block;
-	margin-top: 20px;
-    margin-right: 17px;
+	vertical-align: middle;
+	width: 100%;
 }
 .top-menu li{
-	float: left;
+	/* float: left; */
+	display: inline-block;
+	margin-bottom: 9px;
 }
-.top-menu li:not(:first-child){
-	padding-left:58px;
+.top-menu li{
+	padding-right: 3%;
+	padding-left: 3%;
 }
 .header-contacts{
 	margin-top: -4px;
@@ -413,7 +424,6 @@ div.b-block.header-title{
 }
 .about-left{
 	padding-top: 60px;
-    padding-bottom: 87px;
 	display: inline-block;
     width: 55%;
 	float: left;
@@ -425,7 +435,7 @@ div.b-block.header-title{
     padding-bottom: 63px;
     background-color: #f4f4f4;
 	display: inline-block;
-	width: 41%;
+	width: 40%;
     margin-left: 44px;
 }
 	.about-right:before{
@@ -512,8 +522,8 @@ div.b-block.header-title{
 	border-radius: 3px;
 	width: calc((100% - 48px)/3);
 }
-.b-service-item:not(:last-child){
-	margin-right: 24px;
+.b-service-item:not(:first-child){
+	margin-left: 24px;
 }
 .b-service-item-top{
 	display: block;
@@ -670,6 +680,9 @@ div.b-block.header-title{
     float: left;
     text-align: left;
 }
+.footer .personal-info{
+	width: calc(100% - 200px);
+}
 .under-form{
     margin-top: 32px;
 }
@@ -699,13 +712,16 @@ input[name="MAIL"]{
 }
 .footer-info{
 	position: relative;
-	padding-right: 130px;
 	float: left;
 	color: #554e4e;
 	line-height: 32px;
 	font-size: 20px;
 	padding-top: 29px;
 	padding-bottom:32px;
+}
+.footer-info-right{
+	float: right;
+	padding-right: 130px;
 }
 .left{
 	float: left;
