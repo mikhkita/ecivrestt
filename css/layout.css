@@ -386,7 +386,9 @@ div.b-block.header-title{
 	-webkit-animation: mouse-second-move 1s ease-in-out infinite;
  	-o-animation: mouse-second-move 1s ease-in-out infinite;
 }
-
+.about{
+	overflow: hidden;
+}
 .about .title{
 	font-family: "Merel-Bold";
 	color: #554e4e;
@@ -418,14 +420,24 @@ div.b-block.header-title{
 	text-align: left;
 }
 .about-right{
+	position: relative;
 	padding-top: 85px;
     padding-bottom: 63px;
-	background: url(../i/background-gray.png);
-	background-size: 500px;
+    background-color: #f4f4f4;
 	display: inline-block;
 	width: 41%;
     margin-left: 44px;
 }
+	.about-right:before{
+		position: absolute;
+		content: "s";
+		font-size: 0px;
+		width: 1000px;
+		height: 100%;
+		right: -1000px;
+		top: 0px;
+		background-color: #f4f4f4;
+	}
 .about-button{
 	display: inline-block;
 	background-color: #fece0b;

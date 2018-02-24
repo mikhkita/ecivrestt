@@ -4,10 +4,10 @@
 	$email_admin = "beatbox787@gmail.com";
 	// $email_admin = "soc.taxi.35@gmail.com";
 
-	$from = "“Социальное такси”";
-	$email_from = "robot@taxi-chita.ru";
+	$from = "“Технотрейд Сервис”";
+	$email_from = "ttservice@ttservice.ru";
 
-	$deafult = array("name"=>"Имя","phone"=>"Телефон", "email"=>"E-mail");
+	$deafult = array("name"=>"Имя","phone"=>"Телефон", "email"=>"E-mail", "comment" => "Комментарий");
 
 	$fields = array();
 
