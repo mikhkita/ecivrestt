@@ -178,7 +178,7 @@ input.error,textarea.error{
 }
 .b-logo{
     display: inline-block;
-    /* float: left; */
+    float: left; 
     width: 250px;
     vertical-align: middle;
     height: 57px;

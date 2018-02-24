@@ -5,7 +5,7 @@
 	.b-block{
 		width: calc(100% - 48px);
 	}
-	.b-block-menu{
+	.b-menu{
 		display: none;
 	}
 	div.b-block.header-title{
@@ -29,10 +29,7 @@
     	width: 100%;
 	}
 	.under-form{
-	    margin-top: 14px;
-	}
-	.footer .b-text{
-	    padding-bottom: 60px;
+	    margin-top: 18px;
 	}
 	.about-right{
 	    width: calc(100% + 48px);
@@ -44,6 +41,74 @@
 	}
 	.footer-right-column .about-button{
 	    margin-bottom: 20px;
+	}
+	h2.title{
+	    font-size: 36px;
+	}
+	.header-title h2{
+	    line-height: 28px;
+	}
+	.header-title p{
+	    line-height: 28px;
+    	font-size: 20px;
+	}
+	.about .title{
+	    font-size: 36px;
+   		line-height: 36px;
+	}
+	.about-left{
+	    padding-top: 35px;
+	}
+	.about p{
+	    line-height: 28px;
+        padding-top: 25px;
+	}
+	.about h3{
+	    font-size: 26px;
+        line-height: 28px;
+	}
+	.b-about-icon p{
+		font-size: 20px;
+    	line-height: 26px;
+	}
+	.services h2.title{
+	    font-size: 36px;
+   		line-height: 36px;
+	}
+	.b-service-item-top p{
+	    font-size: 20px;
+	}
+	.b-service-item-bottom p{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.cooperation h2.title{
+	    font-size: 36px;
+        padding-bottom: 20px;
+	}
+	.b-text{
+	    padding-top: 35px;
+        padding-bottom: 60px;
+	}
+	.cooperation p{
+	    text-align: left;
+        font-size: 20px;
+        line-height: 28px;
+	}
+	.footer h2.title{
+		font-size: 30px;
+	}
+	.footer .footer-right-column p{
+		line-height: 26px;
+	}
+	.footer .b-text{
+	    padding-bottom: 45px;
+	}
+	.b-popup{
+	    padding: 24px 24px 36px;
+	}
+	.b-popup h4{
+	    line-height: 24px;
 	}
 }
 @media screen and (max-width: 657px){
@@ -61,7 +126,17 @@
 	}
 	.footer a.about-button.ajax{
 		float: left;
-    	margin-top: 14px;
-    	margin-bottom: 20px;
+    	margin-top: 18px;
+	    margin-bottom: 14px;
+	}
+	
+}
+@media screen and (max-width: 485px){
+	.header-contacts{
+		float: none;
+		margin-top: 20px;
+	}
+	.b-logo{
+		float: none;
 	}
 }
