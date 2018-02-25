@@ -111,6 +111,9 @@
 	.b-popup h4{
 	    line-height: 24px;
 	}
+	.b-popup h2.b-title{
+	    font-size: 34px;
+	}
 }
 @media screen and (max-width: 657px){
 	.footer-info-right{
