@@ -114,6 +114,8 @@ h2.title{
     vertical-align: middle;
 }
 .header-title p{
+    max-width: 500px;
+    margin: auto;
 	line-height: 36px;
 	font-size: 26px;
 }	
@@ -581,7 +583,7 @@ div.b-block.header-title{
 	color: #554e4e; 
 }
 .footer .b-text{
-    padding-top: 30px;
+    padding-top: 68px;
 }
 .footer-left-column{
 	width: 49%;
