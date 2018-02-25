@@ -38,6 +38,10 @@
 	}
 	.cooperation h2.title{
 	    font-size: 44px;
+	    line-height: 36px;
+	}
+	.services .b-text{
+	    padding-bottom: 60px;
 	}
 	.footer-right-column .about-button{
 	    margin-bottom: 20px;
@@ -46,7 +50,7 @@
 	    font-size: 36px;
 	}
 	.header-title h2{
-	    line-height: 28px;
+	    line-height: 36px;
 	}
 	.header-title p{
 	    line-height: 28px;
@@ -61,7 +65,6 @@
 	}
 	.about p{
 	    line-height: 28px;
-        padding-top: 25px;
 	}
 	.about h3{
 	    font-size: 26px;
@@ -96,13 +99,11 @@
         line-height: 28px;
 	}
 	.footer h2.title{
-		font-size: 30px;
+		font-size: 36px;
+		line-height: 36px;
 	}
 	.footer .footer-right-column p{
 		line-height: 26px;
-	}
-	.footer .b-text{
-	    padding-bottom: 45px;
 	}
 	.b-popup{
 	    padding: 24px 24px 36px;
@@ -127,7 +128,7 @@
 	.footer a.about-button.ajax{
 		float: left;
     	margin-top: 18px;
-	    margin-bottom: 14px;
+	    margin-bottom: 20px;
 	}
 	
 }

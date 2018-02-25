@@ -167,7 +167,7 @@ input.error,textarea.error{
 	display: inline-block;
 	vertical-align: middle;
 	width: calc(100% - 430px);
-	margin-bottom: -14px;
+	margin-bottom: -27px;
 	text-align: center;
 	box-sizing: border-box;
 	padding-left: 3%;
@@ -581,7 +581,7 @@ div.b-block.header-title{
 	color: #554e4e; 
 }
 .footer .b-text{
-    padding-top: 68px;
+    padding-top: 30px;
 }
 .footer-left-column{
 	width: 49%;
